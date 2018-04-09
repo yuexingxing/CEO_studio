@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/root_layout_ll_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/common_margin_5"
+        android:paddingBottom="@dimen/common_margin_5"
+        android:paddingLeft="@dimen/common_margin_8"
+        android:paddingRight="@dimen/common_margin_8"
+        android:layout_height="@dimen/common_layout_height_45"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_rect_round_gray4">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:contentDescription="@null"
+                android:src="@mipmap/icon_search"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/et_search_input"
+                    android:layout_toLeftOf="@+id/iv_delete_search"
+                    style="@style/et_search"
+                    android:cursorVisible="false"
+                    android:textColorHint="@color/gray_dark"
+                    android:imeOptions="actionSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/search_et_margin_left_7"
+                    android:hint="请输入宿舍号/订单号/手机号查询"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete_search"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/common_margin_8"
+                    android:paddingTop="@dimen/common_margin_8"
+                    android:paddingBottom="@dimen/common_margin_8"
+                    android:layout_width="@dimen/common_button_height_35"
+                    android:layout_height="@dimen/common_button_height_35"
+                    android:src="@mipmap/icon_delete"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/driver_h"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+            android:id="@+id/swipe_to_load_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.tajiang.ceo.order.view.OrderRefreshHeadView
+                android:id="@id/swipe_refresh_header"
+                android:layout_width="match_parent"
+                android:background="@color/layout_bg"
+                android:textColor="@color/text_loading_gray"
+                android:textSize="14sp"
+                android:layout_height="60dp"
+                android:gravity="center"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/swipe_target"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <com.tajiang.ceo.order.view.OrderLoadMoreFooterView
+                android:id="@id/swipe_load_more_footer"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/layout_bg"
+                android:gravity="center" />
+        </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_show_all_order"-->
+            <!--style="@style/btn_green"-->
+            <!--android:textSize="@dimen/common_size_14sp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/common_margin_30"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="@dimen/common_margin_5"-->
+            <!--android:paddingLeft = "@dimen/common_margin_24"-->
+            <!--android:paddingRight = "@dimen/common_margin_24"-->
+            <!--android:text="显示前7天的订单" />-->
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

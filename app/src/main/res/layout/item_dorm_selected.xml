@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/com_field_height_44"
+    android:layout_marginTop="@dimen/sub_margin_top_12"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+    style="@style/text_16_black_1"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+    android:text="@string/msg_dorms" />
+
+    <TextView
+        android:id="@+id/tv_dorm_id"
+    style="@style/text_14_black_1"/>
+
+
+    </LinearLayout>
+
+    <View style="@style/driver_h"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/com_field_height_44"
+    android:background="@color/white"
+    android:gravity="left|center"
+    android:orientation="horizontal">
+
+    <TextView
+    style="@style/text_16_black_1"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+    android:text="@string/msg_building" />
+
+    </LinearLayout>
+    <View style="@style/driver_h"/>
+
+    <com.tajiang.ceo.common.widget.FlowLayout
+        android:id="@+id/fl_root_view_building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="start|top">
+
+
+    </com.tajiang.ceo.common.widget.FlowLayout>
+
+    <View style="@style/driver_h" />
+
+        <TextView
+            android:id="@+id/tv_click_to_edit"
+            style="@style/text_16_black_1"
+            android:clickable="true"
+            android:background="@drawable/slt_layout_rect_gray"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_field_height_44"
+            android:textColor="@color/text_black_3"
+            android:text="@string/msg_click_to_edit" />
+    <View style="@style/driver_h" />
+    <!--<TextView-->
+    <!--android:id="@+id/tv_building_number"-->
+    <!--style="@style/text_14_black_3"-->
+    <!--android:layout_marginLeft="@dimen/txt_margin_left_20"-->
+    <!--android:background="@drawable/shape_rect_round_gray2"-->
+    <!--android:paddingBottom="@dimen/tag_vertical_padding_5"-->
+    <!--android:paddingLeft="@dimen/tag_horizontal_padding_6"-->
+    <!--android:paddingRight="@dimen/tag_horizontal_padding_6"-->
+    <!--android:paddingTop="@dimen/tag_vertical_padding_5"-->
+    <!--android:text="9号楼"-->
+    <!--android:textColor="@color/white" />-->
+
+</LinearLayout>

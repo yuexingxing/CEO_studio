@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View style="@style/driver_h"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/text_12_black_1"
+        android:layout_gravity="left"
+        android:layout_marginBottom="@dimen/com_text_vertical_margin_6"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+        android:layout_marginTop="@dimen/com_text_vertical_margin_6"
+        android:text="@string/msg_default_date" />
+
+
+    <RelativeLayout
+        android:id="@+id/ye_balance1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_field_height_50"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:id="@+id/tv3"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:layout_marginTop="@dimen/check_field_txt_vertical_margin_8"
+            android:text="@string/msg_balance_transfer" />
+
+        <TextView
+            style="@style/text_12_black_3"
+            android:id="@+id/tv4"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/check_field_txt_vertical_margin_8"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:text="@string/msg_default_date_and_time" />
+
+        <TextView
+            style="@style/text_16_black_3"
+            android:id="@+id/tv5"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+            android:text="@string/msg_default_cash"
+            android:textColor="@color/green" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/driver_h"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_16"/>
+    <RelativeLayout
+        android:id="@+id/ye_balance2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_field_height_50"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:id="@+id/tv6"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:layout_marginTop="@dimen/check_field_txt_vertical_margin_8"
+            android:text="4月1日账单" />
+
+        <TextView
+            style="@style/text_12_black_3"
+            android:id="@+id/tv7"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/check_field_txt_vertical_margin_8"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:text="5-9 03:45" />
+
+        <TextView
+            style="@style/text_16_black_3"
+            android:id="@+id/tv8"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+            android:text="@string/msg_default_cash_in"
+            android:textColor="@color/red_orange" />
+    </RelativeLayout>
+
+    <View style="@style/driver_h"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_16"/>
+    <View style="@style/driver_h" />
+</LinearLayout>

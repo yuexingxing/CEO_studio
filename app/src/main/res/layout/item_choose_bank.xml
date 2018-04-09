@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mess_choose_bank_height_70"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_bank_img"
+        android:layout_width="@dimen/common_image_width_45"
+        android:layout_height="@dimen/common_image_height_45"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/common_margin_10">
+
+        <ImageView
+            android:id="@+id/iv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_choose_bank"
+        android:layout_marginLeft="@dimen/common_margin_10"
+        android:layout_toRightOf="@+id/ll_bank_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="@dimen/common_margin_16"
+            android:layout_marginBottom="@dimen/common_margin_16"
+            android:layout_toLeftOf="@+id/iv_choose_statues"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:textColor="@color/text_black"
+                android:text="建设银行"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_bank_notice"
+                android:textColor="@color/text_black_2"
+                android:text="单笔5万，单日20万"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_choose_statues"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:layout_marginRight="@dimen/common_margin_10"/>
+
+        <View style="@style/driver_h"
+            android:layout_alignParentBottom="true">
+        </View>
+
+    </RelativeLayout>
+
+</RelativeLayout>

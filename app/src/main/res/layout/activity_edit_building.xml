@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_nav_root_height_50"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+            android:text="@string/msg_dorms" />
+
+        <EditText
+            android:id="@+id/et_zone"
+            style="@style/base_et"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/msg_must_write" />
+    </LinearLayout>
+
+    <View
+        style="@style/driver_h"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_nav_root_height_50"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/text_16_black_1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                android:text="@string/msg_building" />
+
+
+            <LinearLayout
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@drawable/slt_layout_rect_gray"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_vertical_margin_16">
+
+                <RelativeLayout
+                    android:id="@+id/rl_add_building"
+                    android:layout_width="@dimen/common_button_height_35"
+                    android:layout_height="@dimen/common_button_height_35">
+
+                    <ImageView
+                        style="@style/text_16_black_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:text="@string/msg_building"
+                        android:src="@mipmap/icon_add_building_plus"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_alignParentBottom="true"
+            style="@style/driver_h" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_add_new_building"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/common_nav_root_height_50"-->
+        <!--android:background="@color/white"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_add_building"-->
+                <!--android:layout_marginLeft="@dimen/activity_vertical_margin_16"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp">-->
+
+                <!--<ImageView-->
+                    <!--style="@style/text_16_black_1"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="@string/msg_building"-->
+                    <!--android:src="@mipmap/icon_add_building"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_new_building"-->
+                <!--style="@style/base_et"-->
+                <!--android:imeOptions="actionDone"-->
+                <!--android:singleLine="true"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:hint="点击添加新楼栋" />-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;style="@style/base_et"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="@dimen/common_margin_16"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:hint="点击添加新楼栋" />&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--style="@style/driver_h" />-->
+
+    <!--</RelativeLayout>-->
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_above="@+id/ll_add_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <!-- 动态添加楼栋 -->
+            <LinearLayout
+                android:id="@+id/ll_root_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_add_button"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_add_building"
+                style="@style/btn_green"
+                android:layout_marginRight="@dimen/common_margin_right_40"
+                android:layout_marginLeft="@dimen/common_margin_left_40"
+                android:layout_height="@dimen/com_field_height_44"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:layout_marginBottom="@dimen/common_margin_8"
+                android:text="@string/msg_save" />
+
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_add_building"-->
+            <!--style="@style/btn_green"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginRight="@dimen/common_margin_right_40"-->
+            <!--android:layout_marginLeft="@dimen/common_margin_left_40"-->
+            <!--android:layout_height="@dimen/com_field_height_44"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginBottom="@dimen/common_margin_8"-->
+            <!--android:text="@string/msg_save" />-->
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

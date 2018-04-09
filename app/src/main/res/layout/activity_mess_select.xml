@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_mess_selected"
+        android:layout_marginBottom="@dimen/sub_margin_bottom_12"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_add_mess"-->
+        <!--style="@style/btn_green"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/btn_height_44"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="@dimen/btn_vertical_margin_24"-->
+        <!--android:layout_marginLeft="@dimen/btn_horizontal_margin_30"-->
+        <!--android:layout_marginRight="@dimen/btn_horizontal_margin_30"-->
+        <!--android:text="@string/msg_add_mess" />-->
+
+</RelativeLayout>

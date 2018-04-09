@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/common_margin_10"
+    android:paddingBottom="@dimen/common_margin_10"
+    android:background="@color/white">
+
+    <View style="@style/driver_h"
+        android:layout_centerVertical="true"
+        android:layout_height="2px"
+        android:layout_width="match_parent"></View>
+
+    <TextView
+        android:id="@+id/tv_store_category_name"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/common_margin_10"
+        android:paddingRight="@dimen/common_margin_10"
+        android:background="@color/white"
+        android:text="第一食堂"/>
+
+
+</RelativeLayout>

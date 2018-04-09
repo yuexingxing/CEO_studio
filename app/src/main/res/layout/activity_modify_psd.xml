@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:text=""
+            android:textSize="13sp"
+            android:textColor="@color/text_black"
+            android:inputType="number"
+            android:hint="请输入当前密码"
+            android:id="@+id/modify_psd_old" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:background="@color/driver" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:text=""
+            android:textSize="13sp"
+            android:textColor="@color/text_black"
+            android:inputType="number"
+            android:hint="请输入至少六位新密码"
+            android:id="@+id/modify_psd_new" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:background="@color/driver" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:text=""
+            android:textSize="13sp"
+            android:textColor="@color/text_black"
+            android:inputType="number"
+            android:hint="确认新密码"
+            android:id="@+id/modify_psd_new_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:text="提交"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_radius_order_main_color"
+            android:layout_marginRight="20dp"
+            android:id="@+id/modify_psd_commit"  />
+    </LinearLayout>
+
+</LinearLayout>

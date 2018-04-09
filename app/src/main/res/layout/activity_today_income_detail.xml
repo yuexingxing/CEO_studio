@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/fragment_mess_margin_top_12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_layout_height_50">
+
+        <TextView
+            android:textSize="@dimen/common_size_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/fragment_mess_padding_15"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="@dimen/activity_horizontal_margin_16"
+            android:text="配送收入" />
+
+        <TextView
+            android:id="@+id/tv_today_profit"
+            android:textColor="@color/red_orange"
+            android:textSize="@dimen/common_size_16sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:drawablePadding="@dimen/common_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"/>
+
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/fragment_mess_margin_top_12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_layout_height_50">
+
+        <TextView
+            android:textSize="@dimen/common_size_16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/fragment_mess_padding_15"
+            android:gravity="left|center_vertical"
+            android:text="订单奖励" />
+
+        <TextView
+            android:id="@+id/tv_today_reward"
+            android:textColor="@color/red_orange"
+            android:textSize="@dimen/common_size_16sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"/>
+
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_16">
+
+        <TextView
+            android:id="@+id/tv_today_reward_rules"
+            android:layout_alignParentRight="true"
+            style="@style/text_14_green"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单奖励规则 >"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

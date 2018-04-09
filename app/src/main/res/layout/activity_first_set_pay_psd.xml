@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+    <TextView
+        android:id="@+id/tv_reset_password"
+        style="@style/text_16_black_1"
+        android:layout_marginTop="@dimen/common_margin_80"
+        android:text="请输入支付密码" />
+
+    <com.jungly.gridpasswordview.GridPasswordView
+        android:id="@+id/gpv_first_set_password"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_field_height_44"
+        android:layout_marginTop="@dimen/common_margin_24" />
+
+</LinearLayout>

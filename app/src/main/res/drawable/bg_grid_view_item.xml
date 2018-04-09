@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+        <stroke android:width="2px"
+            android:color="@color/driver" />
+
+        <gradient android:angle="270.0"
+            android:endColor="@color/driver"
+            android:startColor="@color/driver" />
+    </shape></item>
+
+    <item android:state_focused="true"><shape android:shape="rectangle">
+        <gradient android:angle="270.0"
+            android:endColor="@color/driver"
+            android:startColor="@color/driver" />
+
+        <stroke android:width="2px"
+            android:color="@color/driver" />
+    </shape></item>
+
+    <!-- 只保留右边和底部边框 -->
+    <item>
+        <layer-list>
+            <!-- 边框颜色值 --><item>
+            <shape>
+                <solid android:color="@color/driver" />
+            </shape>
+        </item>
+            <!-- 主体背景颜色值 -->
+            <item android:bottom="2px" android:right="2px">
+                <shape>
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_m_m_v"
+    android:id="@+id/ll_click_dismiss"
+    android:background="@color/translucent">
+
+    <LinearLayout
+        style="@style/ll_m_w_v"
+        android:background="@drawable/sushe"
+        android:layout_marginTop="@dimen/com_field_height_44"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<View style="@style/driver_h"></View>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_layout_height_40"
+            android:background="@color/transparent">
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_select_all_apartment"
+                    android:textColor="@color/green"
+                    android:background="@drawable/shape_line_round_green"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_padding_6"
+                    android:paddingRight="@dimen/common_padding_6"
+                    android:layout_marginTop="@dimen/common_padding_6"
+                    android:layout_marginBottom="@dimen/common_padding_6"
+                    android:gravity="center"
+                    android:text="全部宿舍楼" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/driver_h"></View>
+
+        <LinearLayout
+            style="@style/ll_m_m_h"
+            android:background="@color/transparent"
+            android:layout_height="@dimen/common_popup_widow_height_260">
+
+            <ListView
+                android:id="@+id/lvRectApartment"
+                android:layout_weight="3"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ListView
+                android:id="@+id/lvApartment"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

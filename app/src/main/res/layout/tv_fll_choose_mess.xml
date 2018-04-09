@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/common_margin_5"
+    android:paddingBottom="@dimen/common_margin_5"
+    android:paddingLeft="@dimen/common_margin_16"
+    android:paddingRight="@dimen/common_margin_16"
+    android:textSize="@dimen/common_size_12sp"
+    android:text="Hello Wordld"
+    android:textColor="@color/text_black_1"
+    android:background="@drawable/slt_tv_rect_circle_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</TextView>

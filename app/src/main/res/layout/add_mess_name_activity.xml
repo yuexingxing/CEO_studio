@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+    <EditText
+        android:id="@+id/et_mess_name"
+        style="@style/base_et"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:paddingLeft="@dimen/common_padding_8"
+        android:paddingRight="@dimen/common_padding_8"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:layout_marginRight="@dimen/activity_login_margin_10"
+        android:layout_marginLeft="@dimen/activity_login_margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:hint="@string/msg_input_mess_phone" />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btn_green"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_44"
+        android:layout_marginTop="@dimen/btn_margin_top_and_bottom_12"
+        android:layout_marginLeft="@dimen/btn_horizontal_margin_30"
+        android:layout_marginRight="@dimen/btn_horizontal_margin_30"
+        android:text="@string/msg_save" />
+
+</LinearLayout>

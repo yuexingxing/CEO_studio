@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/common_margin_24"
+        android:paddingRight="@dimen/common_margin_24"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/text_16_black_1"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="开始时间"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/common_margin_10"
+                android:layout_marginRight="@dimen/common_margin_10"/>
+
+            <TextView
+                style="@style/text_16_black_1"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="结束时间"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_12"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_date_start"
+                style="@style/text_16_black_1"
+                android:background="@drawable/shape_line_bottom_black"
+                android:padding="@dimen/common_margin_5"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="2012 - 12 - 12"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_10"
+                android:layout_marginRight="@dimen/common_margin_10"
+                android:src="@mipmap/img_date_picker"/>
+
+            <TextView
+                android:id="@+id/tv_date_end"
+                style="@style/text_16_black_1"
+                android:background="@drawable/shape_line_bottom_black"
+                android:padding="@dimen/common_margin_5"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="2012 - 12 - 12"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:id="@+id/ll_content_statistic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@mipmap/img_bg_order_amount"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/text_16_black_1"
+                        android:textSize="26sp"
+                        android:text="128"/>
+                    <TextView
+                        style="@style/text_12_black_1"
+                        android:layout_marginLeft="@dimen/common_margin_5"
+                        android:text="单"/>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_12_black_1"
+                    android:layout_marginTop="@dimen/common_margin_16"
+                    android:text="单量"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="@dimen/common_margin_24"
+                android:background="@mipmap/img_bg_order_count"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_16_black_1"
+                        android:textSize="26sp"
+                        android:text="128"
+                        android:id="@+id/textView" />
+
+                    <TextView
+                        style="@style/text_12_black_1"
+                        android:layout_marginLeft="@dimen/common_margin_5"
+                        android:text="份"/>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_12_black_1"
+                    android:layout_marginTop="@dimen/common_margin_16"
+                    android:text="份数"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_content_deliver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_margin_10"
+            android:paddingRight="@dimen/common_margin_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/common_margin_10"
+                android:paddingRight="@dimen/common_margin_10"
+                android:background="@color/title_bg_light_orange">
+                <include layout="@layout/item_deliver_data"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_deliver_data"
+                android:paddingLeft="@dimen/common_margin_10"
+                android:paddingRight="@dimen/common_margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/slt_layout_rect_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/rl_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_field_height_44"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_account_balance"/>
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:id="@+id/tv_item_name"
+            android:layout_toRightOf="@+id/image_view"
+            android:layout_height="@dimen/com_field_height_44"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/common_margin_16"
+            android:paddingRight="@dimen/common_margin_16"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="@dimen/activity_horizontal_margin_16"
+            android:drawableRight="@mipmap/icon_jiantou_r"
+            android:text="@string/msg_service_tel" />
+
+    </LinearLayout>
+
+    <View style="@style/driver_h" />
+
+</LinearLayout>

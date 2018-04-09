@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/root_layout_ll_gray">
+    <View
+        style="@style/driver_h"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_content_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/check_field_height_50"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:id="@+id/tv_income"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:layout_marginTop="@dimen/check_field_txt_vertical_margin_8"
+                android:text="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tv_income_date"
+                style="@style/text_12_black_3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/check_field_txt_vertical_margin_8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:text="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tv_income_money"
+                style="@style/text_16_black_3"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                android:textColor="@color/gray_dark" />
+        </RelativeLayout>
+        <View
+            style="@style/driver_h" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_content_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/check_field_height_50"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/text_14_black_1"
+                android:id="@+id/tv_reward"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:layout_marginTop="@dimen/check_field_txt_vertical_margin_8"
+                android:text="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tv_reward_date"
+                style="@style/text_12_black_3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/check_field_txt_vertical_margin_8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:text="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tv_reward_money"
+                style="@style/text_16_black_3"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                android:textColor="@color/gray_dark" />
+        </RelativeLayout>
+        <View
+            style="@style/driver_h" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

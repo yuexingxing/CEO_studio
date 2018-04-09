@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:maxEms="8"
+    android:singleLine="true"
+    android:textColor="@color/white"
+    android:textSize="@dimen/base_title_mid_text_size_18"
+    android:text="@string/app_name"
+    android:drawablePadding="@dimen/base_title_mid_text_drawable_padding_4"
+    android:drawableRight="@mipmap/icon_title_more"/>

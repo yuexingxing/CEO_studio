@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.tajiang.ceo"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 8
+        versionName "1.1.1"
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "2ZpJzoWwE26nIg2lpRf8k",
+                GETUI_APP_KEY   : "KcQRN3ErzI8GFMsBUo9Pv3",
+                GETUI_APP_SECRET: "oiz98QGDPsA9pHxyNYlnh3",
+                PACKAGE_NAME    : applicationId
+        ]
+        //APP_ID、APP_KEY、APP_SECRET请根据个推开发者后台申请到的应用参数进行相应替换
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "mips", "mips64", "x86", "x86_64"
+        }
+
+    }
+
+//    signingConfigs {
+//        release {
+//            keyAlias 'android.keystore'
+//            keyPassword 'tajiang123456'
+//            storeFile file('D:/tj/keystores/android.keystore')
+//            storePassword 'tajiang123456'
+//        }
+//    }
+
+    buildTypes {
+        release {
+//            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+
+}
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.jungly:GridPasswordView:0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.facebook.fresco:fresco:0.10.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.facebook.fresco:fresco:0.9.0'
+    compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'com.malinskiy:superrecyclerview:1.1.4'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
+    compile 'com.timehop.stickyheadersrecyclerview:library:[0.4.3]@aar'
+    compile 'com.github.Aspsine:SwipeToLoadLayout:+'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.getui:sdk:2.9.0.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.17'
+    compile 'com.xw.repo:xedittext:1.0.6@aar'
+    //Leak Canary 配置开始
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //Leak Canary 配置结束
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+}
+
+dependencies {
+    compile 'junit:junit:4.12'
+    compile 'com.android.support:support-v4:25.3.1'
+}

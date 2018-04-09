@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 通用颜色 -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="translucent">#77000000</color>
+    <color name="translucent_dark">#99000000</color>
+    <color name="translucent_light">#20000000</color>
+
+    <color name="gray_selected">#f8f8f8</color>
+    <color name="gray_search">#f7f7f7</color>
+    <color name="gray_dark">#cacaca</color>
+    <color name="gray">#f1f1f1</color>
+    <color name="green">#05c756</color>
+    <color name="green_launch">#3DDE81</color>
+
+    <color name="green_light">#51ce5a</color>
+    <color name="green_btn_bg_light">#2f05C756</color>
+    <color name="green_state_light">#83e699</color>
+    <color name="green_dark">#45b54d</color>
+
+    <color name="red_orange">#f95c06</color>
+
+    <color name="layout_bg">#f7f7f7</color>
+    <color name="et_hint_color">#d7d7d7</color>
+    <color name="et_text_color">#494949</color>
+    <color name="text_gray">#bfbfbf</color>
+    <color name="text_gray_light_1">#d9d9d9</color>
+    <color name="text_gray_light">#e0e0e0e0</color>
+    <color name="text_loading_gray">#999999</color>
+    <color name="driver">#dddddd</color>
+    <color name="driver_2">#E6E6E6</color>
+    <color name="driver_3">#DADADA</color>
+    <color name="driver_4">#F6F6F6</color>
+
+    <color name="text_black_bank">#303030</color>
+    <color name="text_orange">#faba5c</color>
+    <color name="text_red">#f87c3f</color>
+
+    <color name="transparent_dialog">#dddddd</color>
+    <color name="text_black">#000000</color>
+    <color name="text_black_1">#797979</color>
+    <color name="text_black_2">#9b9b9b</color>
+    <color name="text_black_3">#c5c5c5</color>
+
+    <color name="bt_bottom_sheet">#F7F7F7</color>
+
+    <!-- 标题背景 -->
+    <color name="title_bg_light_orange">#92C705</color>
+    <color name="item_bg_light_green">#F3FEF7</color>
+    <!-- 标题栏 -->
+
+    <!-- 底部栏 -->
+
+    <!--圆角进度条-->
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@color/transparent</color>
+    <color name="text_ababab">#ABABAB</color>
+    <color name="main_color">#ffdd00</color>
+    <color name="main_bg_color">#eeeeee</color>
+    <color name="gray_line">#dddddd</color>
+    <color name="order_list_divider">#d6d6d6</color>
+
+    <color name="order_666666">#666666</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>

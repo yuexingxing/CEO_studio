@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/common_padding_8"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_layout_height_25"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_stall_name"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/common_margin_5"
+            tools:text="档口"
+            android:textColor="@color/text_black_1" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_driver"
+            android:layout_toRightOf="@+id/tv_stall_name"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <View
+                android:id="@+id/view_driver"
+                style="@style/driver_h"
+                android:background="@color/driver_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

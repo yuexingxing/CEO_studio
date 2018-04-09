@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_layout_height_55"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:id="@+id/ll_delete_building"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_del_building"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_delete_building"></ImageView>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_edit_building"
+            style="@style/base_et"
+            android:imeOptions="actionSend"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/ll_delete_building"
+            android:layout_toLeftOf="@+id/rl_content"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:hint="@string/msg_click_to_add_new_building"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_edit_building"
+                style="@style/btn_green"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_button_height_30"
+                android:text="@string/msg_close" />
+
+            <com.tajiang.ceo.common.widget.SwitchView
+                android:id="@+id/switch_view"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/common_button_height_30" />
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/driver_h"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+            android:layout_marginRight="@dimen/activity_vertical_margin_16" />
+
+    </RelativeLayout>
+
+</LinearLayout>

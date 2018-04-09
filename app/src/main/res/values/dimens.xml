@@ -1,0 +1,192 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_login_image_width_166">166dp</dimen>
+    <dimen name="activity_login_image_height_124">124dp</dimen>
+    <dimen name="activity_login_margin_top_50">50dp</dimen>
+    <dimen name="activity_login_common_margin_top_20">20dp</dimen>
+
+    <dimen name="activity_login_layout_height_80">80dp</dimen>
+    <dimen name="activity_login_margin_top_24">24dp</dimen>
+    <dimen name="activity_login_padding_10">10dp</dimen>
+    <dimen name="activity_login_margin_10">10dp</dimen>
+    <dimen name="activity_login_margin_40">40dp</dimen>
+    <dimen name="activity_login_image_layout_22">22dp</dimen>
+    <dimen name="activity_login_et_layout_height_0">0dp</dimen>
+
+    <dimen name="activity_pay_setting_image_layout_22">22dp</dimen>
+
+    <dimen name="activity_account_layout_height_180">180dp</dimen>
+    <dimen name="activity_account_layout_height_25">25dp</dimen>
+    <dimen name="activity_account_layout_height_30">30dp</dimen>
+    <dimen name="activity_account_layout_height_35">35dp</dimen>
+    <dimen name="activity_account_layout_height_40">40dp</dimen>
+    <dimen name="activity_account_layout_height_50">50dp</dimen>
+
+    <dimen name="activity_account_layout_margin_top_5">5dp</dimen>
+    <dimen name="activity_account_layout_margin_top_1">1dp</dimen>
+    <dimen name="activity_account_tx_margin_left_26">26dp</dimen>
+    <dimen name="activity_account_tx_margin_right_26">26dp</dimen>
+    <dimen name="activity_account_tx_margin_start_26">26dp</dimen>
+
+    <dimen name="activity_withdraw_balance_tv_height_70">70dp</dimen>
+    <dimen name="activity_withdraw_balance_tv_width_80">80dp</dimen>
+    <dimen name="activity_withdraw_balance_layout_padding_top_25">25dp</dimen>
+    <dimen name="activity_withdraw_balance_layout_padding_left_60">60dp</dimen>
+    <dimen name="activity_withdraw_balance_layout_padding_right_60">60dp</dimen>
+
+
+    <dimen name="activity_balance_margin_left_30">30dp</dimen>
+    <dimen name="activity_balance_margin_right_30">30dp</dimen>
+
+
+    <dimen name="activity_mess_status_text_size_20">20sp</dimen>
+    <dimen name="activity_mess_status_layout_margin_top_24">24dp</dimen>
+    <dimen name="activity_mess_status_padding_12">12dp</dimen>
+
+    <dimen name="activity_mess_time_padding_15">15dp</dimen>
+
+    <dimen name="activity_mess_info_padding_16">16dp</dimen>
+
+    <dimen name="activity_statis_layout_0">0dp</dimen>
+
+    <dimen name="fragment_mess_layout_width_0">0dp</dimen>
+    <dimen name="fragment_mess_text_size_18">18sp</dimen>
+    <dimen name="fragment_mess_margin_top_12">12dp</dimen>
+    <dimen name="fragment_mess_padding_15">15dp</dimen>
+
+    <dimen name="fragment_order_layout_width_0">0dp</dimen>
+    <dimen name="fragment_order_layout_width_12">12dp</dimen>
+    <dimen name="fragment_order_layout_height_12">12dp</dimen>
+    <dimen name="fragment_order_layout_margin_left_4">4dp</dimen>
+    <dimen name="fragment_order_padding_top_10">10dp</dimen>
+    <dimen name="fragment_order_padding_bottom_10">10dp</dimen>
+
+    <dimen name="fragment_search_divider_hint_10">10dp</dimen>
+
+    <dimen name="layout_psw_see_able_layout_width_20">20dp</dimen>
+    <dimen name="layout_psw_see_able_layout_height_20">20dp</dimen>
+
+    <dimen name="item_list_order_img_layout_width_24">24dp</dimen>
+    <dimen name="item_list_order_img_layout_height_24">24dp</dimen>
+    <dimen name="item_list_order_img_layout_width_14">14dp</dimen>
+    <dimen name="item_list_order_img_layout_height_14">14dp</dimen>
+    <dimen name="item_list_order_margin_left_6">6dp</dimen>
+    <dimen name="item_list_order_margin_left_3">3dp</dimen>
+
+
+    <dimen name="base_title_padding_left_10">10dp</dimen>
+    <dimen name="base_title_padding_right_10">10dp</dimen>
+    <dimen name="base_title_left_img_layout_width_25">25dp</dimen>
+    <dimen name="base_title_left_img_layout_height_25">25dp</dimen>
+    <dimen name="base_title_left_img_padding_16">16dp</dimen>
+
+    <dimen name="base_title_right_img_layout_width_25">25dp</dimen>
+    <dimen name="base_title_right_img_layout_height_25">25dp</dimen>
+    <dimen name="base_title_right_img_padding_16">16dp</dimen>
+
+    <dimen name="base_title_text_size_18">18sp</dimen>
+
+
+    <dimen name="base_title_left_text_size_18">18sp</dimen>
+
+    <dimen name="base_title_right_text_size_18">18sp</dimen>
+
+    <dimen name="base_title_mid_text_size_18">18sp</dimen>
+    <dimen name="base_title_mid_text_drawable_padding_4">4dp</dimen>
+
+    <dimen name="progress_view_layout_width_40">40dp</dimen>
+    <dimen name="progress_view_layout_height_40">40dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin_16">16dp</dimen>
+    <dimen name="activity_vertical_margin_16">16dp</dimen>
+    <dimen name="common_nav_root_height_50">50dp</dimen>
+    <dimen name="com_field_height_44">44dp</dimen>
+    <dimen name="com_field_height_70">70dp</dimen>
+    <dimen name="sub_margin_top_12">12dp</dimen>
+    <dimen name="sub_margin_bottom_12">12dp</dimen>
+    <dimen name="txt_margin_left_20">20dp</dimen>
+    <dimen name="tag_vertical_padding_5">5dp</dimen>
+    <dimen name="tag_horizontal_padding_6">6dp</dimen>
+    <dimen name="btn_height_44">44dp</dimen>
+    <dimen name="btn_vertical_margin_24">24dp</dimen>
+    <dimen name="btn_horizontal_margin_30">30dp</dimen>
+    <dimen name="field_txt_margin_right_36">36dp</dimen>
+    <dimen name="com_field_height_100">100dp</dimen>
+    <dimen name="check_money_size_42">42sp</dimen>
+    <dimen name="check_money_size_38">38sp</dimen>
+    <dimen name="com_text_vertical_margin_6">6dp</dimen>
+    <dimen name="check_field_height_50">50dp</dimen>
+    <dimen name="check_field_txt_vertical_margin_8">8dp</dimen>
+    <dimen name="tab_bar_height">50dp</dimen>
+    <dimen name="field_txt_margin_right_150">150dp</dimen>
+    <dimen name="school_field_height_60">60dp</dimen>
+    <dimen name="com_txt_margin_left_50">50dp</dimen>
+    <dimen name="search_et_margin_left_7">7dp</dimen>
+    <dimen name="mess_school_headshot_50">50dp</dimen>
+    <dimen name="mess_choose_bank_height_70">70dp</dimen>
+
+    <dimen name="padding">16dp</dimen>
+    <dimen name="line_height">45dp</dimen>
+
+    <!-- Added by shenqili. -->
+    <dimen name="tv_usual_text_size_16sp">16sp</dimen>
+    <dimen name="tv_usual_text_size_20sp">20sp</dimen>
+
+    <dimen name="layout_padding_left_and_right_15">15dp</dimen>
+    <dimen name="layout_padding_left_and_right_10">10dp</dimen>
+    <dimen name="common_padding_6">6dp</dimen>
+
+    <dimen name="btn_margin_top_and_bottom_12">12dp</dimen>
+    <dimen name="find_psd_margin_top_65">65dp</dimen>
+    <dimen name="find_psd_height_60">60dp</dimen>
+
+    <dimen name="common_padding_8">8dp</dimen>
+    <dimen name="common_empty_view_width_190">190dp</dimen>
+    <dimen name="common_empty_view_height_270">270dp</dimen>
+
+
+    <dimen name="loading_view_80">80dp</dimen>
+    <dimen name="common_popup_widow_height_260">260dp</dimen>
+    <dimen name="common_image_width_45">45dp</dimen>
+    <dimen name="common_image_height_45">45dp</dimen>
+    <dimen name="common_layout_height_55">55dp</dimen>
+    <dimen name="common_layout_height_60">60dp</dimen>
+
+    <dimen name="common_layout_height_40">40dp</dimen>
+    <dimen name="common_layout_height_45">45dp</dimen>
+    <dimen name="common_layout_height_50">50dp</dimen>
+    <dimen name="common_button_height_35">35dp</dimen>
+    <dimen name="common_image_18">18dp</dimen>
+    <dimen name="common_image_15">15dp</dimen>
+
+    <dimen name="common_margin_5">5dp</dimen>
+    <dimen name="common_margin_8">8dp</dimen>
+    <dimen name="common_margin_10">10dp</dimen>
+    <dimen name="common_margin_12">12dp</dimen>
+    <dimen name="common_margin_16">16dp</dimen>
+    <dimen name="common_margin_24">24dp</dimen>
+    <dimen name="common_margin_30">30dp</dimen>
+    <dimen name="common_margin_32">32dp</dimen>
+    <dimen name="common_margin_50">50dp</dimen>
+    <dimen name="common_margin_100">100dp</dimen>
+    <dimen name="common_button_height_30">30dp</dimen>
+    <dimen name="common_pop_window_margin_100">100dp</dimen>
+    <dimen name="common_layout_height_25">25dp</dimen>
+    <dimen name="common_margin_80">80dp</dimen>
+    <dimen name="common_margin_70">70dp</dimen>
+    <dimen name="common_margin_left_40">40dp</dimen>
+    <dimen name="common_margin_right_40">40dp</dimen>
+    <dimen name="common_size_12sp">12sp</dimen>
+    <dimen name="common_size_14sp">14sp</dimen>
+    <dimen name="common_size_16sp">16sp</dimen>
+    <dimen name="common_size_18sp">18sp</dimen>
+    <dimen name="common_size_20sp">20sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="common_text_view_height_60">60dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

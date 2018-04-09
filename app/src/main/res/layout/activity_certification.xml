@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:text=""
+            android:textSize="13sp"
+            android:textColor="@color/text_black"
+            android:hint="姓名"
+            android:id="@+id/certafication_name" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:background="@color/driver" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:text=""
+            android:textSize="13sp"
+            android:textColor="@color/text_black"
+            android:hint="身份证号"
+            android:id="@+id/certafication_id" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:background="@color/driver" />
+
+        <TextView
+            android:text="@string/certafication_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textSize="10sp"
+            android:id="@+id/textView6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:text="提交"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_radius_order_main_color"
+            android:layout_marginRight="20dp"
+            android:id="@+id/certafication_commit"  />
+    </LinearLayout>
+
+</LinearLayout>

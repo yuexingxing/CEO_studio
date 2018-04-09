@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/base_m_w"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/common_margin_16"
+        android:layout_marginLeft="@dimen/btn_margin_top_and_bottom_12"
+        android:layout_marginRight="@dimen/btn_margin_top_and_bottom_12">
+
+        <Button
+            android:id="@+id/btn_start_time"
+            style="@style/btn_green_1"
+            android:background="@drawable/shape_line_backround_green"
+            android:text="@string/msg_btn_end_time"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_end_time"
+            style="@style/btn_green_1"
+            android:background="@drawable/shape_line_round_green"
+            android:text="@string/msg_btn_start_time"
+            android:textColor="@color/green"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <com.tajiang.ceo.common.widget.WheelView
+                android:id="@+id/wv_choose_hour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <com.tajiang.ceo.common.widget.WheelView
+                android:id="@+id/wv_choose_minute"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_confirm_time"
+        style="@style/btn_green"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/common_margin_16"
+        android:layout_marginLeft="@dimen/btn_margin_top_and_bottom_12"
+        android:layout_marginRight="@dimen/btn_margin_top_and_bottom_12">
+        <TextView
+            style="@style/text_16_white"
+            android:text="确认修改：">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_start_time_hour"
+                style="@style/text_16_white"/>
+            <TextView
+                style="@style/text_16_white"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/tv_start_time_minute"
+                style="@style/text_16_white"/>
+
+            <TextView
+                style="@style/text_16_white"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/tv_end_time_hour"
+                style="@style/text_16_white"/>
+            <TextView
+                style="@style/text_16_white"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/tv_end_time_minute"
+                style="@style/text_16_white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_clear_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_44"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+        android:layout_marginTop="@dimen/btn_vertical_margin_24"
+        android:background="@drawable/slt_btn_rect_delete"
+        android:text="@string/msg_clean_current_mess_time"
+        android:textColor="@color/red_orange" />
+
+</LinearLayout>

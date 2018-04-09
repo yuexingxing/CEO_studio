@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_white">
+
+    <LinearLayout
+        style="@style/ll_m_m_v"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/shape_line_round_gray_corner">
+
+        <EditText
+        android:id="@+id/et_mess_bbs"
+        style="@style/base_et"
+        android:gravity="top"
+        android:maxLength="25"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@android:color/transparent" />
+
+        <View
+            style="@style/driver_h">
+        </View>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_nav_root_height_50">
+            <LinearLayout
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+                <TextView
+                    style="@style/text_14_black_1"
+                    android:text="还可以输入"/>
+                <TextView
+                    android:id="@+id/tv_bbs_remain_count"
+                    style="@style/text_14_green"
+                    android:textColor="@color/green"
+                    android:text="25"/>
+                <TextView
+                    style="@style/text_14_black_1"
+                    android:text="个字符"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btn_green"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_44"
+        android:layout_marginTop="@dimen/btn_margin_top_and_bottom_12"
+        android:layout_marginLeft="@dimen/btn_horizontal_margin_30"
+        android:layout_marginRight="@dimen/btn_horizontal_margin_30"
+        android:text="@string/msg_save" />
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_admin"
+        android:clickable="true"
+        android:background="@drawable/slt_layout_rect_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_field_height_44"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/text_16_black_1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:text="@string/msg_current_account_name" />
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/text_14_black_3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+            android:text="@string/app_name" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/activity_horizontal_margin_16"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_pay"
+        android:clickable="true"
+        android:background="@drawable/slt_layout_rect_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_field_height_44"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:layout_height="@dimen/com_field_height_44"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/common_margin_16"
+            android:paddingRight="@dimen/common_margin_16"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="@dimen/activity_horizontal_margin_16"
+            android:drawableRight="@mipmap/icon_jiantou_r"
+            android:text="@string/msg_pay_setting" />
+
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+
+    <!-- 送餐寝室楼栋管理 -->
+    <LinearLayout
+        android:id="@+id/ll_content_ceo"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:id="@+id/tv_dorm"
+            android:layout_marginTop="@dimen/sub_margin_top_12"
+            android:clickable="true"
+            android:background="@drawable/slt_layout_rect_gray"
+            android:layout_height="@dimen/com_field_height_44"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/common_margin_16"
+            android:paddingRight="@dimen/common_margin_16"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="@dimen/activity_horizontal_margin_16"
+            android:drawableRight="@mipmap/icon_jiantou_r"
+            android:text="@string/msg_dorm_sending_food" />
+
+        <View style="@style/driver_h" />
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:id="@+id/tv_canteen"
+            android:layout_marginTop="@dimen/sub_margin_top_12"
+            android:clickable="true"
+            android:background="@drawable/slt_layout_rect_gray"
+            android:layout_height="@dimen/com_field_height_44"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/common_margin_16"
+            android:paddingRight="@dimen/common_margin_16"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="@dimen/activity_horizontal_margin_16"
+            android:drawableRight="@mipmap/icon_jiantou_r"
+            android:text="@string/msg_mess_info" />
+
+        <View style="@style/driver_h" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_44"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+        android:layout_marginTop="@dimen/field_txt_margin_right_36"
+        android:background="@drawable/shape_quit_round_red"
+        android:text="@string/msg_sign_out"
+        android:textColor="@color/red_orange" />
+
+    <TextView
+        android:id="@+id/tv_app_version"
+        android:layout_marginTop="100dp"
+        style="@style/text_16_black_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/red_orange"
+        android:text="Debug"/>
+
+</LinearLayout>

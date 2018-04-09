@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_w_w"
+    android:background="@drawable/shape_rect_round_white" >
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_phoneOrderTakeAway"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:textColor="@color/text_black_1"
+            android:gravity="center"
+            android:text="17867382911"
+            android:textSize="18sp" />
+
+        <View style="@style/driver_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/view_cancelCallDialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slt_rect_white_bottom_left_corner"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_black_2"
+                android:textSize="14sp" />
+
+            <View style="@style/driver_v"
+                android:layout_marginTop="@dimen/common_padding_6"
+                android:layout_marginBottom="@dimen/common_padding_6"/>
+
+            <TextView
+                android:id="@+id/view_callCallDialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slt_rect_white_bottom_right_corner"
+                android:gravity="center"
+                android:text="呼叫"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

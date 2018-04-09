@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_dorm_selected"
+        android:layout_marginBottom="@dimen/common_layout_height_60"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_test"
+        style="@style/text_16_black_1"
+        android:alpha="0"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/green_light"
+        android:text="This Is Green"></TextView>
+
+    <Button
+        android:id="@+id/btn_add_dorm"
+        style="@style/btn_green"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_44"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/common_margin_8"
+        android:layout_marginLeft="@dimen/btn_horizontal_margin_30"
+        android:layout_marginRight="@dimen/btn_horizontal_margin_30"
+        android:text="@string/msg_add_dorm" />
+
+</RelativeLayout>

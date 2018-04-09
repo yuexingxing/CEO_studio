@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/base_m_m"
+    android:background="@color/green_launch">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center">
+        <View
+            android:layout_width="250dp"
+            android:layout_height="125dp"
+            android:background="@mipmap/icon_slogen_launcher">
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <View
+            android:layout_width="34dp"
+            android:layout_height="28dp"
+            android:background="@mipmap/icon_launch_head">
+        </View>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="雷锋骑士"/>
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="版本号：1.0.0"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

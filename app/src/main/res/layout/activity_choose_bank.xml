@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="支付额度会根据银行规定适时调整，仅供参考"
+        android:textColor="@color/text_black_2"
+        android:textSize="@dimen/common_size_14sp"
+        android:layout_marginTop="@dimen/item_list_order_margin_left_6"
+        android:paddingLeft="@dimen/common_margin_8"
+        android:background="@color/layout_bg"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_choose_bank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

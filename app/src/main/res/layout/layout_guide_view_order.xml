@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/common_nav"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/common_nav_root_height_50">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_below="@+id/common_nav"
+        android:layout_height="@dimen/com_field_height_44"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ll_show_dorm_list"
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/guide_dorm_list"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:paddingRight="@dimen/common_margin_8"
+            android:paddingTop="@dimen/common_margin_5"
+            android:paddingBottom="@dimen/common_margin_5"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 展示示例订单，用于引导操作 -->
+
+    <RelativeLayout
+        android:layout_below="@+id/ll_search"
+        android:layout_marginBottom="@dimen/tab_bar_height"
+        android:background="@color/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_order_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 订单示例 -->
+            <include layout="@layout/layout_guide_order">
+            </include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/translucent_dark">
+        </LinearLayout>
+
+        <ImageView
+            android:layout_below="@+id/ll_order_detail"
+            android:id="@+id/iv_guide_confirm_order"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/guide_image_view_confirm_order_ok" />
+
+    </RelativeLayout>
+
+    <!-- 展示示例订单，用于引导操作 -->
+
+    <!-- 引导图片 -->
+    <ImageView
+        android:id="@+id/iv_guide_store"
+        android:layout_marginTop="@dimen/common_layout_height_45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/guide_image_view_title_ok"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/common_margin_30" />
+
+    <ImageView
+        android:layout_below="@+id/ll_search"
+        android:id="@+id/iv_guide_dorm_list"
+        android:layout_marginLeft="@dimen/common_margin_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/guide_image_view_dorm_list_ok" />
+
+
+    <ImageView
+        android:layout_below="@+id/ll_search"
+        android:id="@+id/iv_guide_search"
+        android:layout_marginLeft="@dimen/common_margin_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/guide_image_view_search_ok" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_guide_delivered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/guide_image_view_delivered_ok" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/guide_tab_bar_bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_bar_height"/>
+    </LinearLayout>
+
+    <!-- 引导图片 -->
+
+    <!--<LinearLayout-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:id="@+id/guide_tab_bar_bottom"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/tab_bar_height"/>-->
+
+
+</RelativeLayout>

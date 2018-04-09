@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_left_img"
+    android:layout_width="@dimen/base_title_left_img_layout_width_25"
+    android:layout_height="@dimen/base_title_left_img_layout_height_25"
+    android:padding="@dimen/base_title_left_img_padding_16"
+    android:contentDescription="@null"
+    android:src="@drawable/set_up_back" />
+

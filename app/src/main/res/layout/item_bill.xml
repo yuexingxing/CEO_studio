@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bill_detail"
+        android:clickable="true"
+        android:background="@drawable/slt_layout_rect_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_field_height_50">
+
+        <TextView
+            style="@style/text_14_black_1"
+            android:id="@+id/tv_type_name"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:layout_marginTop="@dimen/check_field_txt_vertical_margin_8"
+            android:text="@string/msg_balance_transfer" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_12_black_3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/check_field_txt_vertical_margin_8"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:text="@string/msg_default_date_and_time" />
+
+        <TextView
+            android:id="@+id/tv_day_remain"
+            style="@style/text_12_black_3"
+            android:layout_toLeftOf="@+id/tv_amount"
+            android:layout_marginRight="@dimen/common_margin_8"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red_orange" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/text_16_black_3"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+            android:text="@string/msg_default_cash"
+            android:textColor="@color/red_orange" />
+
+    </RelativeLayout>
+    <View style="@style/driver_h"></View>
+</LinearLayout>

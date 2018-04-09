@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/root_layout_ll_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_account_layout_height_25"
+        android:layout_marginTop="@dimen/activity_account_layout_margin_top_5"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/text_14_black_3"
+            android:text="@string/msg_bargain_info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/common_margin_16"/>
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_account_layout_height_35"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/activity_account_layout_margin_top_1"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:text="@string/msg_bargain_method"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:id="@+id/textView1" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_date"
+            style="@style/text_16_black_3"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/text_black_3"
+            android:text="7天周期结算"/>
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_account_layout_height_35"
+        android:layout_marginTop="@dimen/activity_account_layout_margin_top_1"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:text="@string/msg_limited_transfer_cash"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tv_min_money"
+            style="@style/text_16_black_3"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/text_black_3"
+            android:text="￥5"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_account_layout_height_25"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/text_14_black_3"
+            android:text="@string/msg_withdraw_info"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/common_margin_16"/>
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+    <LinearLayout
+        style="@style/root_layout_ll_gray"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_account_layout_height_35"
+        android:layout_marginTop="@dimen/activity_account_layout_margin_top_1"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/text_16_black_1"
+            android:layout_centerVertical="true"
+            android:text="@string/msg_card_holder"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/common_margin_16" />
+
+
+        <EditText
+            android:id="@+id/tv_card_name"
+            style="@style/base_et"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:textSize="@dimen/common_size_16sp"
+            android:paddingRight="@dimen/common_margin_8"
+            android:layout_marginLeft="@dimen/common_margin_80"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/text_black_3"
+            android:hint="@string/msg_input_your_card_name" />
+    </RelativeLayout>
+        <View style="@style/driver_h"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:layout_marginRight="@dimen/common_margin_16"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_account_layout_height_35"
+        android:layout_marginTop="@dimen/activity_account_layout_margin_top_1"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/text_16_black_1"
+            android:text="@string/msg_card_number"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/common_margin_16"/>
+
+        <com.xw.repo.xedittext.XEditText
+            android:id="@+id/tv_card_number"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:inputType="number"
+            android:paddingRight="@dimen/common_margin_8"
+            android:layout_marginLeft="@dimen/common_margin_80"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_size_16sp"
+            android:textColor="@color/text_black"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/text_black_3"
+            android:hint="@string/msg_input_your_card_number" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_account_layout_height_25"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_choose_bank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_account_layout_height_35"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:text="@string/msg_bank"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/tv_bank"
+            style="@style/text_16_black_1"
+            android:hint="选择银行"
+            android:gravity="center_vertical|right"
+            android:textColorHint="@color/text_black_3"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/common_margin_8"
+            android:drawableRight="@mipmap/icon_jiantou_r"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/common_margin_16"
+        android:layout_marginRight="@dimen/common_margin_16"
+        style="@style/driver_h" />
+
+    <RelativeLayout
+        android:id="@+id/rl_account_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_account_layout_height_35"
+        android:layout_marginTop="@dimen/activity_account_layout_margin_top_1"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/text_16_black_1"
+            android:text="@string/msg_card_created_address"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/common_margin_16"/>
+
+        <TextView
+            android:id="@+id/tv_bank_address"
+            style="@style/text_16_black_1"
+            android:gravity="center_vertical|right"
+            android:hint="选择开户行所在地"
+            android:textColorHint="@color/text_black_3"
+            android:drawablePadding="@dimen/common_margin_8"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/icon_jiantou_r"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_marginTop="@dimen/common_margin_8"
+        android:layout_height="@dimen/progress_view_layout_height_40"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/text_20_orange"
+            android:paddingLeft="@dimen/layout_padding_left_and_right_15"
+            android:layout_alignParentLeft="true"
+            android:text="@string/msg_cancel"/>
+        <TextView
+            android:id="@+id/tv_finish"
+            style="@style/text_20_orange"
+            android:paddingRight="@dimen/layout_padding_left_and_right_15"
+            android:layout_alignParentRight="true"
+            android:text="@string/msg_finish"/>
+    </RelativeLayout>
+
+    <Button
+        style="@style/btn_green"
+        android:id="@+id/btn_save"
+        android:layout_marginTop="@dimen/btn_margin_top_and_bottom_12"
+        android:layout_height="@dimen/btn_height_44"
+        android:layout_marginLeft="@dimen/activity_balance_margin_left_30"
+        android:layout_marginRight="@dimen/activity_balance_margin_right_30"
+        android:text="@string/msg_save"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/activity_account_layout_height_180"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_margin_16"
+            android:layout_alignParentLeft="true">
+            <com.tajiang.ceo.common.widget.WheelView
+                android:id="@+id/wv_choose_shen_fen"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/common_margin_16"
+            android:layout_alignParentRight="true">
+            <com.tajiang.ceo.common.widget.WheelView
+                android:id="@+id/wv_choose_city"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

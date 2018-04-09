@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal" >
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/content_apartment_zone"
+        style="@style/text_12_black_1"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="content" />
+
+    <View style="@style/driver_h"></View>
+</LinearLayout>
+
+<View style="@style/driver_v"></View>
+
+</LinearLayout>

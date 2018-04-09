@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+    <TextView
+        android:id="@+id/tv_mess_status"
+        style="@style/base_w_w"
+        android:layout_gravity="start"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+        android:layout_marginTop="@dimen/activity_mess_status_layout_margin_top_24"
+        android:text="@string/msg_under_business"
+        android:textColor="@color/green"
+        android:textSize="@dimen/activity_mess_status_text_size_20" />
+    <TextView
+        android:id="@+id/tv_msg_mess_state"
+        style="@style/text_14_black_1"
+        android:padding="@dimen/activity_mess_status_padding_12"
+        android:layout_margin="@dimen/activity_horizontal_margin_16"
+        android:background="@drawable/shape_line_round_gray"
+        android:text="@string/msg_under_business_specific_info"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View style="@style/driver_h"
+            android:layout_above="@+id/btn_mess_status"/>
+
+        <Button
+            android:id="@+id/btn_mess_status"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_44"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:background="@drawable/slt_layout_rect_gray"
+            android:text="@string/msg_pause_business"
+            android:textColor="@color/red_orange" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+
+    <RelativeLayout
+        android:id="@+id/ye_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/activity_horizontal_margin_16"
+        android:paddingLeft="@dimen/activity_horizontal_margin_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                style="@style/text_12_black_3"
+                android:text="@string/msg_withdraw_money"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_marginBottom="@dimen/common_margin_16"
+                style="@style/base_w_w"
+                android:textColor="@color/red_orange"
+                android:textSize="@dimen/check_money_size_42"
+                android:text="@string/msg_default_money" />
+
+            <View
+                android:id="@+id/driver_h"
+                style="@style/driver_h"
+                android:layout_height="1dp">
+            </View>
+
+            <TextView
+                style="@style/text_12_black_2"
+                android:layout_below="@+id/driver_h"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:layout_marginBottom="@dimen/common_margin_8"
+                android:text="当天配送收入经过 2 个工作日可到账"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipe_to_load_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tajiang.ceo.mess.view.CheckBillRefreshHeadView
+            android:id="@id/swipe_refresh_header"
+            android:layout_width="match_parent"
+            android:background="@color/layout_bg"
+            android:textColor="@color/text_loading_gray"
+            android:textSize="14sp"
+            android:layout_height="60dp"
+            android:gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="@dimen/common_margin_5" />
+
+        <com.tajiang.ceo.mess.view.CheckBillLoadMoreFooterView
+            android:id="@id/swipe_load_more_footer"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/layout_bg"
+            android:gravity="center" />
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+</LinearLayout>

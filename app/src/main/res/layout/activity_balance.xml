@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+    <RelativeLayout
+        android:id="@+id/rl_balance"
+        android:clickable="true"
+        android:background="@drawable/slt_layout_rect_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_field_height_100"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:paddingLeft="@dimen/common_margin_16"
+        android:paddingRight="@dimen/common_margin_16"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                style="@style/text_12_black_3"
+                android:text="@string/msg_withdraw_money"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/tv_balance"
+                style="@style/base_w_w"
+                android:textColor="@color/red_orange"
+                android:textSize="@dimen/check_money_size_42"
+                android:text="@string/msg_default_money" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginRight="@dimen/common_margin_16"-->
+            <!--android:drawablePadding="@dimen/common_margin_8">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_balance"-->
+                <!--style="@style/base_w_w"-->
+                <!--android:textColor="@color/red_orange"-->
+                <!--android:textSize="@dimen/check_money_size_42"-->
+                <!--android:text="@string/msg_default_money" />-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;style="@style/base_w_w"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/red_orange"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="@dimen/check_money_size_38"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="@string/msg_default_yuan"/>&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:contentDescription="@null"
+            android:src="@mipmap/icon_jiantou_r"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <View style="@style/driver_h" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_check_account"
+        android:clickable="true"
+        android:background="@drawable/slt_layout_rect_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_field_height_44"
+        android:layout_marginTop="@dimen/sub_margin_top_12"
+        android:gravity="center_vertical">
+        <TextView
+            style="@style/text_16_black_1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:text="@string/msg_account_bank" />
+        <TextView
+            android:id="@+id/tv_card_number"
+            style="@style/text_14_black_3"
+            android:drawablePadding="@dimen/common_margin_5"
+            android:drawableRight="@mipmap/icon_jiantou_r"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+            android:text="未绑定" />
+    </RelativeLayout>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_check_account"-->
+        <!--android:clickable="true"-->
+        <!--android:background="@drawable/slt_layout_rect_gray"-->
+        <!--style="@style/base_m_w"-->
+        <!--android:text="@string/msg_account_bank"-->
+        <!--android:layout_marginTop="@dimen/sub_margin_top_12"-->
+        <!--android:padding="@dimen/common_margin_16"-->
+        <!--android:layout_alignBottom="@+id/imageView"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:drawableRight="@mipmap/icon_jiantou_r" />-->
+
+    <View style="@style/driver_h" />
+
+    <Button
+        android:id="@+id/btn_withdraw_cash"
+        style="@style/btn_green"
+        android:enabled="false"
+        android:background="@drawable/shape_rect_round_gray3"
+        android:layout_marginTop="@dimen/activity_vertical_margin_16"
+        android:layout_marginLeft="@dimen/activity_balance_margin_left_30"
+        android:layout_marginRight="@dimen/activity_balance_margin_right_30"
+        android:layout_alignParentBottom="true"
+        android:text="@string/msg_withdraw_balance" />
+
+</LinearLayout>

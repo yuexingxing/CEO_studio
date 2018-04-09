@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rl_root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_root_content"
+            style="@style/root_layout_ll_gray">
+
+            <View style="@style/driver_h" />
+
+            <include layout="@layout/layout_order_type_state_1"/>
+
+            <View style="@style/driver_h" />
+
+            <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+                android:id="@+id/swipe_to_load_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.tajiang.ceo.order.view.OrderRefreshHeadView
+                    android:id="@id/swipe_refresh_header"
+                    android:layout_width="match_parent"
+                    android:background="@color/layout_bg"
+                    android:textColor="@color/text_loading_gray"
+                    android:textSize="14sp"
+                    android:layout_height="60dp"
+                    android:gravity="center"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/swipe_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.tajiang.ceo.order.view.OrderLoadMoreFooterView
+                    android:id="@id/swipe_load_more_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/layout_bg"
+                    android:gravity="center" />
+            </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_order_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_order_bottom_select"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/checkBox_selall_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:paddingLeft="5dp"
+                android:text="  全选"
+                android:clickable="true"
+                android:button="@drawable/select_radiobutton"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center|right" >
+
+            <Button
+                android:id="@+id/my_order_confirm_multy"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="批量确认"
+                android:background="@drawable/shape_radius_order_main_color"
+                android:textColor="@color/text_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

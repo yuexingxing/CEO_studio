@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+style="@style/root_layout_ll_gray">
+
+    <View style="@style/driver_h"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_notice_normal"
+            style="@style/text_16_black_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_nav_root_height_50"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+            android:gravity="left|center"
+            android:drawableRight="@mipmap/icon_jiantou_r"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:text="[通知] 无线打印机如何自动接单"
+            android:textColor="@color/text_black_1"/>
+    </LinearLayout>
+
+
+    <View style="@style/driver_h" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_notice_important"
+            style="@style/text_16_black_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_nav_root_height_50"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+            android:gravity="left|center"
+            android:drawableRight="@mipmap/icon_jiantou_r"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+            android:text="[重要通知] 请及时核查食堂对账" />
+    </LinearLayout>
+
+    <View style="@style/driver_h" />
+
+</LinearLayout>

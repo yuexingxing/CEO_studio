@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipe_to_load_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.tajiang.ceo.order.view.OrderRefreshHeadView
+            android:id="@id/swipe_refresh_header"
+            android:layout_width="match_parent"
+            android:background="@color/layout_bg"
+            android:textColor="@color/text_loading_gray"
+            android:textSize="14sp"
+            android:layout_height="60dp"
+            android:gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.tajiang.ceo.order.view.OrderLoadMoreFooterView
+            android:id="@id/swipe_load_more_footer"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/layout_bg"
+            android:gravity="center" />
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+</LinearLayout>

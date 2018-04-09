@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_store_name"
+        style="@style/base_w_w"
+        android:background="@drawable/slt_layout_rect_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_account_layout_height_50"
+        android:paddingLeft="@dimen/fragment_mess_padding_15"
+        android:gravity="center|left"
+        android:textSize="@dimen/common_size_16sp" />
+
+    <View style="@style/driver_h"></View>
+</LinearLayout>
+

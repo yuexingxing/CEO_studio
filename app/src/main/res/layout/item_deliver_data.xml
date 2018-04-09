@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_m_w"
+    android:layout_height="@dimen/common_margin_32">
+    <LinearLayout
+        android:id="@+id/ll_item_root"
+        style="@style/base_m_w"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_32"
+        android:background="@color/title_bg_light_orange"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_deliver_name"
+            style="@style/text_14_black_bank"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="配送员"/>
+
+        <TextView
+            android:id="@+id/tv_deliver_account"
+            style="@style/text_14_black_bank"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="账号"/>
+
+        <TextView
+            android:id="@+id/tv_deliver_order_count"
+            style="@style/text_14_black_bank"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="单量"/>
+
+        <TextView
+            android:id="@+id/tv_deliver_copies"
+            style="@style/text_14_black_bank"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="份数"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

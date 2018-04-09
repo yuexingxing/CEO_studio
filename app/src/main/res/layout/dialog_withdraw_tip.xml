@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="450dp"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/shape_radius_call"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center|left"
+                    android:textColor="@color/text_black"
+                    android:text="Q1：使用余额的条件？
+为了保护账户安全，使用余额必须先绑定手机号\n\n
+
+Q2：余额提现有什么规则？
+为了保护账户和资金安全，每个用户（拥有同一个手机号、
+支付账号与硬件设备的用户，均视为一个用户），最低只能
+提10元。\n\n
+
+Q3：提现申请成功后，多久可以到账
+由于收款平台不同，到账速度也不同，一般提现到账时间为
+3个工作日\n\n
+
+Q4：为什么我会提现失败？
+提现失败原因可能：个人实名认证信息填写错误；账户存在
+风险被拦截；超出当日提现规则。\n\n
+
+Q5：什么是不可用余额？
+例如活动赠款；被冻结的有风险款项\n\n
+
+如需帮助请拨打客服电话：400-992-0278" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/dialog_withdraw_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:src="@drawable/shop_shut_down"
+            android:textColor="@color/text_black" />
+    </LinearLayout>
+
+</LinearLayout>

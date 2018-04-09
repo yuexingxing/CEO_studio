@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_layout_ll_gray">
+
+   <LinearLayout
+       android:paddingLeft="@dimen/layout_padding_left_and_right_15"
+       android:paddingRight="@dimen/layout_padding_left_and_right_15"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="15dp"
+       android:background="@color/white"
+       android:orientation="vertical">
+    <TextView
+        style="@style/text_16_black_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="无线打印机如何自动接单"
+        android:textSize="@dimen/common_size_18sp"
+        android:gravity="center"/>
+       <TextView
+           style="@style/text_16_black_1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="06-07 17:09"
+           android:textSize="12dp"
+           android:gravity="center"
+           android:layout_marginTop="5dp"/>
+       <View style="@style/driver_h"
+           android:layout_marginTop="10dp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="      无线打印机使用问题需要咨询全民雷锋，请拨打咨
+询电话0880808080- 2121，无线打印机使用问题需要
+咨询全民雷锋，无线打印机使用问题需咨询全民雷锋。"
+           android:layout_marginTop="10dp"/>
+</LinearLayout>
+</LinearLayout>
